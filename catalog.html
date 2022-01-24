@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="navigation">
+        <a class="navigation-logo" href="">
+          <img class="main-page-logo" src="index.html" alt="Логотип город Седона" />
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link-current" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item navigation-item-search">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item navigation-item-like">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Лайк</span>
+            </a>
+          </li>
+          <li>
+            <a class="button navigation-button" href="">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hotel-search"> 
+      <h1 class="inner-page-title">Гостиницы Седоны</h1>
+      <ul class="inner-navigation">
+      <li class="inner-navigation-item"> 
+        <a class="inner-navigation-link-home" href="index.html"> 
+            <span class="visually-hidden">Главная</span>
+        </a>
+        <span class="inner-navigation-span"> > </span>
+      </li>
+      <li class="inner-navigation-item">
+        <a class="inner-navigation-link-hotels">Гостиницы</a>
+      </li>
+      </ul>
+      <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="hotels-filter-group">
+            <legend class="hotels-filter-title">Инфраструктура</legend>
+            <ul class="hotels-filter-list">
+              <li class="hotels-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li class="hotels-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="parking" checked>
+                  Парковка
+                </label>
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="wi-fi">
+                    Wi-Fi
+                  </label>
+            </ul>
+          </fieldset>
+      </form>
+  </body>
+</html>
