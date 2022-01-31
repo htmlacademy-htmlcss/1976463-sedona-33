@@ -114,14 +114,14 @@ body {
   color: #fff;
 }
 
-.hotel-search__offer {
+.hotel-offer__offer {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.hotel-search__description {
+.hotel-offer__description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
