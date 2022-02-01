@@ -49,6 +49,8 @@ body {
   background-color: #756257;
   text-decoration: none;
   color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .background-wrapper {
@@ -63,6 +65,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  color: #000;
 }
 
 .advantages-header__text {
@@ -249,5 +252,5 @@ body {
 
 .mailing--no-background-img {
   background-image: none;
-  color: #000;
+  color: #333;
 }
