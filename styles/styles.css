@@ -68,8 +68,8 @@ body {
 .navigation__user {
   display: flex;
   justify-content: flex-end;
+  margin-left: auto;
   max-width: 130px;
-  margin-left: 0 auto;
 }
 
 .navigation-list__link {
@@ -89,11 +89,13 @@ body {
 .navigation-list__item--search {
   background-image: url("/images/search.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .navigation-list__item--like {
   background-image: url("/images/favorite.svg");
   background-repeat: no-repeat;  
+  background-position: center;
 }
 
 .navigation__button {
@@ -102,6 +104,12 @@ body {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 9px 15px;
+  width: 130px;
+  text-align: center;
+  align-self: center;
+  border-radius: 5px;
+  margin-left: 20px;
 }
 
 .advantages-list {
