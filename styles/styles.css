@@ -62,7 +62,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  width: 470px;
+  width: 500px;
 }
 
 .navigation__user {
@@ -122,9 +122,11 @@ body {
 
 
 .background-wrapper {
-  background-image: url("/images/main-background.jpg");
-  background-size: 100% auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  background-image: url("/images/main-background-vector.svg"), url("/images/main-background.jpg");
   background-repeat: no-repeat;
+  background-position: bottom center, center center;
 }
 
 .background-wrapper__logo {
@@ -134,6 +136,7 @@ body {
 
 .advantages-header {
   text-align: center;
+  padding-top: 50px;
 }
 
 .advantages-inner-list {
