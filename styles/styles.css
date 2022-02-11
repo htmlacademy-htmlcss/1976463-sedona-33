@@ -86,6 +86,15 @@ body {
   margin-left: 24px;
 }
 
+.navigation-user .navigation-list__link {
+  min-width: 16px;
+  min-height: 22px;
+}
+
+.navigation-list__link:hover {
+  background-color: #83B3D3;
+}
+
 .navigation-list__item--search {
   background-image: url("/images/search.svg");
   background-repeat: no-repeat;
@@ -112,15 +121,6 @@ body {
   margin-left: 20px;
 }
 
-.advantages-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-
 .background-wrapper {
   padding-top: 51px;
   padding-bottom: 82px;
@@ -140,13 +140,6 @@ body {
   padding-bottom: 80px;
 }
 
-.advantages-inner-list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
 .advantages-header__description {
   font-weight: 700;
   font-size: 30px;
@@ -162,6 +155,29 @@ body {
   text-align: center;
 }
 
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list__container {
+  display: flex;
+  background-color: #83B3D3;
+}
+
+.advantages-list__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 96px 100px 87px 100px;
+  text-align: center;
+}
+
 .advantages-inner-list__title, 
 .advantages-list__title {
   color: #000;
@@ -169,14 +185,56 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
-.advantages-list__item {
-  background-color: #83B3D3;
+.advantages-list__description {
+  margin: 0;
+}
+
+.advantages-list__number {
+  margin-bottom: 30px;
 }
 
 .advantages-list__img {
   background-color: #fff;
+  
+}
+
+.advantages-list-inner__text-container {
+  width: 220px;
+  padding-right: 90px;
+  padding-left: 90px;
+}
+
+.advantages-inner-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.advantages-inner-list__title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.advantages-inner-list__description {
+  margin: 0;
+}
+
+.advantages-inner-list__item,
+.advantages-list__item--light-blue,
+.advantages-list__item--trip {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 137px 0;
 }
 
 .advantages-inner-list__item--hotel {
@@ -205,17 +263,42 @@ body {
   color: #fff;
 }
 
+.hotel-offer {
+  padding: 91px 0 93px 0; 
+  display: flex;
+  flex-direction: column;
+}
+
 .hotel-offer__offer {
+  display: block;
+  color: #000;
   font-size: 30px;
+  font-weight: 700;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 29px;
 }
 
 .hotel-offer__description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+.hotel-offer__button {
+  align-self: center;
+  width: 575px;
+  height: 60px;
+  background-color: #756257;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  border-radius: 10px;
 }
 
 .page-footer__container {
@@ -226,9 +309,14 @@ body {
 }
 
 .mailing {
+  display: flex;
+  flex-direction: column;
   background-image: url("/images/mailing-background.jpg");
   background-repeat: no-repeat;
   color: #fff;
+  padding: 94px 0 93px 0;
+  background-position: center;
+  align-items: center;
 }
 
 .mailing__title {
@@ -237,27 +325,34 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .mailing__description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 46px;
+}
+
+.contacts__container {
+  width: 1056px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0 30px 0;
+  justify-content: space-between;
 }
 
 .social-list {
+  list-style-type: none;
+  display: flex;
   min-width: 107px;
-  margin-left: auto;
-}
-
-.phone {
-  min-width: 720px;
-  margin-left: auto;
-}
-
-.contacts__academy-link {
-  min-width: 115px;
-  margin-left: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .phone__number {
