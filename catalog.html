@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -51,65 +51,67 @@
               <a class="breadcrumbs__link">Гостиницы</a>
             </li>
           </ul>
-          <form class="filters" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="filters__fieldset">
-              <legend class="filters__legend">Инфраструктура</legend>
-              <ul class="filters__list">
-                <li class="filters__item">
-                  <label class="filters__label">
-                    <input class="filters__input" type="checkbox" name="swimming-pool" checked>
-                    Бассейн
-                  </label>
+          <div class="filters__container">
+            <form class="filters" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="filters__fieldset">
+                <legend class="filters__legend">Инфраструктура</legend>
+                <ul class="filters__list">
+                  <li class="filters__item">
+                    <label class="filters__label">
+                      <input class="filters__input" type="checkbox" name="swimming-pool" checked>
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="filters__item">
+                    <label class="filters__label">
+                      <input class="filters__input" type="checkbox" name="parking" checked>
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="filters__item">
+                    <label class="filters__label">
+                      <input class="filters__input" type="checkbox" name="wi-fi" />
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filters__fieldset">
+                <legend class="filters__legend">Тип жилья</legend>
+                <ul class="filters__list">
+                  <li class="filters__item">
+                    <label class="filters__label">
+                      <input class="filters__input" type="radio" name="housing-type" value="hotel" checked>
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="filters__item">
+                    <label class="filters__label">
+                      <input class="filters__input" type="radio" name="housing-type"  value="motel">
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="filters__item">
+                    <label class="filters__label">
+                      <input class="filters__input" type="radio" name="housing-type" value="Apartments">
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <ul class="filters__buttons">
+                <li class="filters-buttons__item">
+                  <button class="button filters__buttons--submit" type="submit">Применить</button>
                 </li>
-                <li class="filters__item">
-                  <label class="filters__label">
-                    <input class="filters__input" type="checkbox" name="parking" checked>
-                    Парковка
-                  </label>
-                </li>
-                <li class="filters__item">
-                  <label class="filters__label">
-                    <input class="filters__input" type="checkbox" name="wi-fi" />
-                    Wi-Fi
-                  </label>
-                </li>
+                <li class="filters-buttons__item">
+                  <button class="button filters__buttons--reset" type="reset">Сбросить</button>
+                </li> 
               </ul>
-            </fieldset>
-            <fieldset class="filters__fieldset">
-              <legend class="filters__legend">Тип жилья</legend>
-              <ul class="filters__list">
-                <li class="filters__item">
-                  <label class="filters__label">
-                    <input class="filters__input" type="radio" name="housing-type" value="hotel" checked>
-                    Гостиница
-                  </label>
-                </li>
-                <li class="filters__item">
-                  <label class="filters__label">
-                    <input class="filters__input" type="radio" name="housing-type"  value="motel">
-                    Мотель
-                  </label>
-                </li>
-                <li class="filters__item">
-                  <label class="filters__label">
-                    <input class="filters__input" type="radio" name="housing-type" value="Apartments">
-                    Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <ul class="filters__buttons">
-              <li class="filters-buttons__item">
-                <button class="button filters__buttons--submit" type="submit">Применить</button>
-              </li>
-              <li class="filters-buttons__item">
-                <button class="button filters__buttons--reset" type="reset">Сбросить</button>
-              </li> 
-            </ul>
-          </form>
+            </form>
+          </div>
         </section>
         <section class="results">
-          <div class="results-navigation">
+          <div class="results__navigation">
             <h2 class="results-title">Найдено гостиниц: <span class="results_number">38</span></h2>
             <select class="select-sort" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвые</option>
@@ -139,14 +141,16 @@
               <a class="catalog__img-link" href="#">
                 <img class="catalog__img" src="images/hotel-1.jpg" alt="Amara Resort & Spa" width="299" height="206">
               </a>
-              <h3 class="catalog__title">Amara Resort & Spa</h3>
-              <span class="catalog__type">Гостиница</span>
-              <span class="catalog__price">От 4000 ₽</span>
-              <a class="button catalog__more" href="#">Подробнее</a>
-              <button class="button catalog__favorites" type="button">В избранное</button>
-              <div class="raiting">
-                <span class="raiting__four-stars"></span>
-                <span class="raiting__number">Рейтинг: 8,5</span>
+                <h3 class="catalog__title">Amara Resort & Spa</h3>
+              <div class="catalog__container">
+                <span class="catalog__type">Гостиница</span>
+                <span class="catalog__price">От 4000 ₽</span>
+                <a class="button catalog__more" href="#">Подробнее</a>
+                <button class="button catalog__favorites" type="button">В избранное</button>
+                <div class="raiting">
+                  <span class="raiting__four-stars"></span>
+                  <span class="raiting__number">Рейтинг: 8,5</span>
+                </div>
               </div>
             </li>
             <li class="catalog__item">
@@ -228,7 +232,7 @@
           </label>
         </section>
       </div>
-    </main> -->
+    </main> 
     <footer class="page-footer">
       <div class="page-footer__container">
         <section class="mailing mailing--no-background-img">

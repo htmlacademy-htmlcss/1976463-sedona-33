@@ -371,12 +371,36 @@ body {
   background-image: url(/images/search-background.jpg);
   background-repeat: no-repeat;
   color: #fff;
+  margin-bottom: 44px;
+}
+
+.filters__container {
+  padding-bottom: 79px;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item:first-child {
+  margin-left: 73px;
+}
+
+.breadcrumbs__item {
+  margin-left: 26px;
+  margin-bottom: 45px;
 }
 
 .hotel-search__title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  margin-left: 71px;
+  padding-top: 35px;
 }
 
 .breadcrumbs__link {
@@ -384,15 +408,65 @@ body {
   line-height: 21px;
 }
 
+.filters__fieldset {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+  margin-left: 67px;
+}
+
+.filters__fieldset:first-child {
+  margin-left: 71px;;
+}
+
+.filters {
+  display: flex;
+  width: 1124px;
+}
+
 .filters__legend {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  margin-bottom: 30px;
 }
+
+.filters__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 
 .filters__item {
   font-size: 18px;
   line-height: 23px;
+}
+
+.filters__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.filters__buttons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  margin-left: auto;
+}
+
+.results__navigation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.sort-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-left: 81px;
 }
 
 .results-title {
@@ -401,6 +475,23 @@ body {
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
+  margin: 0;
+  margin-left: 70px;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 90px;
+}
+
+.catalog__container {
+  display: flex;
+  width: 339px;
+  flex-wrap: wrap;
 }
 
 .catalog__title {
@@ -408,6 +499,17 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.catalog__img {
+  margin-bottom: 16px;
+}
+
+
+.select-sort {
+  margin-left: 191px;
 }
 
 .catalog__type,
