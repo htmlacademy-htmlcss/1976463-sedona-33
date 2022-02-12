@@ -96,13 +96,13 @@ body {
 }
 
 .navigation-list__item--search {
-  background-image: url("/images/search.svg");
+  background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .navigation-list__item--like {
-  background-image: url("/images/favorite.svg");
+  background-image: url("../images/favorite.svg");
   background-repeat: no-repeat;  
   background-position: center;
 }
@@ -124,7 +124,7 @@ body {
 .background-wrapper {
   padding-top: 51px;
   padding-bottom: 82px;
-  background-image: url("/images/main-background-vector.svg"), url("/images/main-background.jpg");
+  background-image: url("../images/main-background-vector.svg"), url("../images/main-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom center, center center;
 }
@@ -311,7 +311,7 @@ body {
 .mailing {
   display: flex;
   flex-direction: column;
-  background-image: url("/images/mailing-background.jpg");
+  background-image: url("../images/mailing-background.jpg");
   background-repeat: no-repeat;
   color: #fff;
   padding: 94px 0 93px 0;
@@ -368,7 +368,7 @@ body {
 /* catalog */
 
 .hotel-search {
-  background-image: url(/images/search-background.jpg);
+  background-image: url("../images/search-background.jpg");
   background-repeat: no-repeat;
   color: #fff;
   margin-bottom: 44px;
