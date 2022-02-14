@@ -23,7 +23,7 @@ body {
   font-family: "Pt Sans", sans-serif; 
   font-size: 18px;
   line-height: 21px;
-  background-color: #fff;
+  background-color: #F2F2F2;
   color: #333;
   margin: 0;
   display: flex;
@@ -39,6 +39,13 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.body-container {
+  background-color: #fff;
+  width: 1200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin: 0 auto;
 }
 
 .main-container {
@@ -133,6 +140,7 @@ body {
   display: block;
   margin: 0 auto;
 }
+
 
 .advantages-header {
   text-align: center;
@@ -489,10 +497,70 @@ body {
   margin-bottom: 64px;
 }
 
+.catalog__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
 .catalog__container {
   display: flex;
   width: 339px;
   flex-wrap: wrap;
+}
+
+.catalog__type-wrapper {
+  display: flex;
+  width: 300px;
+  margin-bottom: 16px;
+}
+
+.catalog__type {
+  width: 158px;
+}
+
+.catalog__price {
+  max-width: 142px;
+}
+
+.catalog__buttons-wrapper {
+  display: flex;
+  width: 300px;
+  margin-bottom: 16px;
+}
+
+.catalog__favorites {
+  margin-left: 25px;
+  width: 141px;
+  padding: 9px 21px 10px 22px;
+  border: 0px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: #83B3D3;
+  border-radius: 5px;
+}
+
+.catalog__rating-wrapper {
+  display: flex;
+  width: 300px;
+}
+
+.raiting__number {
+  display: block;
+  background-color: #F2F2F2;
+  width: 160px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 140px;
+  border-radius: 5px;
 }
 
 .catalog__title {
@@ -519,6 +587,12 @@ body {
   line-height: 23px;
 }
 
+.button-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
 .catalog__more {
   color: #fff;
   background-color: #756257;
@@ -528,6 +602,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 5px;
+  padding: 9px 24px 10px 23px;
 }
 
 .raiting__number {
@@ -543,8 +619,10 @@ body {
   width: 620px;
   height: 60px;
   display: block;
+  font-family: "PT Sans", sans-serif;
   margin-left: auto;
   margin-right: auto;
+  text-transform: uppercase;
   background-color: #83B3D3;
   color: #fff;
   font-weight: 700;
@@ -553,7 +631,6 @@ body {
   font-size: 20px;
   border: 1px solid #83B3D3;
   border-radius: 5px;
-  margin-bottom: 60px;
   box-sizing: border-box;
 }
 
@@ -582,7 +659,7 @@ body {
   line-height: 26px;
   text-decoration: none;
   box-sizing: border-box;
-  padding: 15px 17px 17px 21px;
+  padding: 15px 17px 19px 21px;
   width: 55px;
   height: 55px;
   border: 1px solid #83B3D3;
