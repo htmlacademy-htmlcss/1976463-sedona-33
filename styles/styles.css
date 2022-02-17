@@ -589,6 +589,10 @@ body {
   margin-bottom: 16px;
 }
 
+.catalog__img-link {
+  text-decoration: none;
+}
+
 .catalog__img {
   margin-bottom: 16px;
 }
