@@ -79,6 +79,7 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 500px;
   margin-left: 170px;
@@ -86,6 +87,7 @@ body {
 
 .navigation__user {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   margin-left: auto;
   max-width: 210px;
@@ -113,14 +115,18 @@ body {
   background-color: #756257;
 }
 
+.navigation-list__link:hover {
+  color: #756257;
+}
+
+.navigation-list__link:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
 .navigation__user .navigation-list__link {
   padding: 20px 13px;
   min-width: 16px;
   min-height: 22px;
-}
-
-.navigation-list__link:hover {
-  background-color: #83B3D3;
 }
 
 .navigation__icon {
@@ -130,8 +136,20 @@ body {
   bottom: 2px;
   left: 0;
   margin: auto;
-  fill: #000;
 }
+
+.navigation-list__link:hover svg {
+  fill: #756257;
+}
+
+.navigation-list__link:active svg {
+  fill: rgba(117, 98, 87, 0.3);
+}
+
+.navigation-list__link:active .likes-count {
+  opacity: 0.3;
+}
+
 .likes-number {
   display: block;
   position: absolute;
@@ -158,13 +176,13 @@ body {
 }
 
 .navigation__button {
+  width: 130px;
   background-color: #756257;
   text-decoration: none;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   padding: 9px 15px 8px 15px;
-  width: 130px;
   text-align: center;
   align-self: center;
   border-radius: 4px;
@@ -173,6 +191,22 @@ body {
   display: block;
   margin: 3px 0px 4px 20px;
 }
+
+.navigation__button:focus-visible {
+  outline: 3px solid #83B3D3;
+  outline-offset: 0;
+  background-color: #615048;
+}
+
+.navigation__button:hover {
+  background-color: #615048;
+}
+
+.navigation__button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #615048;
+}
+
 
 .background-wrapper {
   padding-top: 52px;
@@ -381,6 +415,20 @@ body {
   border-radius: 10px;
 }
 
+.hotel-offer__button:focus-visible {
+  outline: 3px solid #83B3D3;
+  background-color: #615048;
+}
+
+.hotel-offer__button:hover {
+  background-color: #615048;
+}
+
+.hotel-offer__button:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .page-footer__container {
   display: flex;
   width: 1200px;
@@ -434,7 +482,27 @@ body {
   background-color: #F2F2F2;
   font-size: 18px;
   line-height: 26px;
-  padding: 18px 0 16px 21px;
+  padding: 18px 15px 16px 21px;
+}
+
+.mailing__field:focus-visible {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  outline-offset: 0;
+}
+
+.mailing__field:hover {
+  background-color: #E6E6E6;
+}
+
+.mailing__field:focus-visible:invalid {
+  box-shadow: inset 0 0 0 2px #FF5757;
+  outline: none;
+}
+
+.mailing__field:disabled {
+  background-color: rgba(199, 184, 184, 0.7);
+  color: #F2F2F2;
 }
 
 .mailing__button {
@@ -449,6 +517,20 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 26px;
+}
+
+.mailing__button:focus-visible {
+  outline: 3px solid #756257;
+  outline-offset: 0;
+}
+
+.mailing__button:hover {
+  background-color: #68A2CA;
+}
+
+.mailing__button:active {
+  background-color: #68A2CA;
+  color: rgba(255,255,255, 0.3);
 }
 
 .contacts__container {
@@ -478,6 +560,34 @@ body {
   margin: 0;
 }
 
+.social-list__link {
+  display: block;
+  box-sizing: border-box;
+  width: 20px;
+}
+
+.social-list__link svg {
+  fill: #83B3D3;
+}
+
+.social-list__link:focus-visible {
+  outline: none;
+}
+
+.social-list__link:focus-visible svg {
+  outline: 3px solid #83B3D3;
+  border-radius: 2px;
+  outline-offset: 5px;
+}
+
+.social-list__link:hover svg {
+  fill: #68A2CA;
+}
+
+.social-list__link:active svg {
+  opacity: 0.3;
+}
+
 .phone__number {
   color: #000;
   font-style: normal;
@@ -487,6 +597,38 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   margin-left: 8px;
+}
+
+.phone__number:focus-visible {
+  outline: 3px solid #83B3D3;
+  outline-offset: 10px;
+  border-radius: 3px;
+}
+
+.phone__number:hover {
+  color: #756257;
+}
+
+.phone__number:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.contacts__academy-link:focus {
+  outline: none;
+}
+
+.contacts__academy-link:focus-visible svg {
+  outline: 3px solid #83B3D3;
+  outline-offset: 10px;
+  border-radius: 3px;
+}
+
+.contacts__academy-link:hover svg{
+  fill: #756257;
+}
+
+.contacts__academy-link:active svg{
+  fill: rgba(117, 98, 87, 0.3);
 }
 
 /* catalog */
