@@ -20,7 +20,7 @@ html {
 
 body {
   min-height: 100%;
-  font-family: "Pt Sans", "Arial", sans-serif; 
+  font-family: "PT Sans", "Arial", sans-serif; 
   font-size: 18px;
   line-height: 21px;
   background-color: #F2F2F2;
@@ -403,7 +403,7 @@ body {
 
 .hotel-offer__button {
   align-self: center;
-  font-family: "Pt Sans", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   width: 575px;
   height: 60px;
   background-color: #756257;
@@ -1353,7 +1353,7 @@ body {
   width: 620px;
   height: 60px;
   display: block;
-  font-family: "Pt Sans", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
