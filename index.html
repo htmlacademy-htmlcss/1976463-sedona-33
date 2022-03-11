@@ -98,7 +98,7 @@
               <li class="advantages-list__item">
                 <div class="advantages-list__container">
                   <img class="advantages-list__item-img" src="images/devils-bridge.jpg" alt="Мост дьявола." width="800" height="384">
-                  <div class="advantages-list__text-container advantages-list-inner__text-container">
+                  <div class="advantages-list__text-container advantages-list__inner-text-container">
                     <h3 class="advantages-list__title advantages-list__title--white">Там есть <br> мост дьявола</h3>
                     <span class="advantages-list__number advantages-list__number--white">— №2 —</span>
                     <p class="advantages-list__description advantages-list__description--white">
@@ -213,9 +213,10 @@
         </div>
       </footer>
     </div>
+    
     <div class="modal__container modal__container-close">
       <div class="modal modal__search">
-        <button class="modal__close-button">
+        <button class="modal__close-button" type="button">
           <svg class="close-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
             <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
             </svg>            
@@ -224,46 +225,47 @@
         <section class="modal__content">
           <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
           <form class="modal__search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field__group">
-              <label class="search__label">Дата заезда:
-                <input class="search-form__date search-form__date--in" type="text" id="date-in" name="date-in" placeholder="Укажите дату">
-                <button class="button calendar-button" type="button">
-                  <span class="visually-hidden">Выбор даты заезда.</span>
-                </button>
-              </label>
-              <span class="field_group__info-message field_group__info-message--in">Мы не можем отправить вас в прошлое.</span>
-            </p>
-            <p class="field__group">
+            <div class="field__group">
+              <label class="search__label" for="date-in">Дата заезда:</label>
+              <input class="search-form__date search-form__date--in" type="text" id="date-in" name="date-in" placeholder="Укажите дату">
+              <button class="button calendar-button" type="button">
+                <span class="visually-hidden">Выбор даты заезда.</span>
+              </button>
+              <span class="field-group__info-message field-group__info-message--in">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="field__group">
               <label class="search__label">Дата выезда:
                 <input class="search-form__date search-form__date--out" type="text" id="date-out" name="date-out" placeholder="Укажите дату">
-                <button class="button calendar-button" type="button">
-                  <span class="visually-hidden">Выбор даты выезда.</span>
-                </button>
               </label>
-              <span class="field_group__info-message field_group__info-message--out">На эти даты есть свободные номера. Пока есть.</span>
-            </p>
-            <p class="field__group">
-              <label class="search__label">Взрослые: 
-                <input class="search-form__people-num adults-num" type="number" id="adults-num" name="adults-num">
-                <button class="button reduce-button reduce-button--adults " type="button">
+              <button class="button calendar-button" type="button">
+                <span class="visually-hidden">Выбор даты выезда.</span>
+              </button>
+              <span class="field-group__info-message field-group__info-message--out">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="field__group">
+              <label class="search__label" for="adults-num">Взрослые:</label>
+              <div class="field__group-container">
+                <input class="search-form__people-num" type="number" id="adults-num" name="adults-num">
+                <button class="button reduce-button" type="button">
                   <span class="visually-hidden">Убрать место для взрослого человека.</span>
                 </button>
-                <button class="button increase-button increase-button--adults" type="button">
-                  <span class="visually-hidden">Добавить место для взрослого человека. </span>
+                <button class="button increase-button" type="button">
+                  <span class="visually-hidden">Добавить место для взрослого человека.</span>
                 </button>
-              </label>
-              <label class="search__label search__label--kids">Дети: 
+              </div>
+              <label class="search__label search__label--kids" for="kids-num">Дети:</label>
+              <div class="field__group-container">
                 <span class="info-message"><span class="info-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. 
                   Дети до 6 лет размещаются бесплатно.</span></span>
-                <input class="search-form__people-num kids-num" type="number" id="kids-num" name="kids-num">
-                <button class="button reduce-button reduce-button--kids" type="button">
+                <input class="search-form__people-num" type="number" id="kids-num" name="kids-num">
+                <button class="button reduce-button" type="button">
                   <span class="visually-hidden">Убрать место для детей.</span>
                 </button>
-                <button class="button increase-button increase-button--kids" type="button">
+                <button class="button increase-button" type="button">
                   <span class="visually-hidden">Добавить место для детей.</span>
                 </button>
-              </label>
-            </p>
+              </div>
+            </div>
             <button class="button search-form__submit-button" type="submit">Найти</button>
           </form>
         </section>
